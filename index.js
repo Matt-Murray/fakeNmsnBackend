@@ -22,10 +22,10 @@ const startingNmsnReferralList = [
     nonCustodialName: 'Vader, Darth',
     nmsnReferralReportTypeCd: 'MN',
     nmsnReferralStatusCd: 'ACCEPTED',
-    nmsnReferralNmsnResponseList: [],
-    nmsnReferralNmsnreferCoverageList: [],
-    nmsnReferralNmsnreferDependentList: [],
-    nmsnReferralNmsnreferPersorgList: [],
+    nmsnReferralNmsnResponseList: [''],
+    nmsnReferralNmsnreferCoverageList: [''],
+    nmsnReferralNmsnreferDependentList: [''],
+    nmsnReferralNmsnreferPersorgList: [''],
 },
 { 
     employerFein: '12121234',
@@ -43,7 +43,7 @@ const startingNmsnReferralList = [
     insuranceStatusCd: 'ACTIVE',
     planStatusCd: 'ACTIVE',
     eligibilityDt: new Date('July 21, 2019 01:15:00'),
-    nonCustodialName: 'York, Thom',
+    nonCustodialName: 'Yorke, Thom',
     nmsnReferralReportTypeCd: 'MN',
     nmsnReferralStatusCd: 'ACCEPTED',
     nmsnReferralNmsnResponseList: [],
@@ -88,6 +88,12 @@ app.use((req, res, next) => {
     console.log(req.path, req.method);
     next();
   });
+
+app.options('/*', (req, res) => {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept, Authorization");
+    res.status('200').end();
+})
 
 app.get('/NmsnrespRetrievalService', function(req, res) {
     
