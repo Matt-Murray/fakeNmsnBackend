@@ -5,6 +5,7 @@ const bodyParser = require('body-parser')
 
 const startingNmsnReferralList = [
     {
+        nmsnReferralId: '01',
         employerFein: '12121234',
         employeeSsn: '123456789',
         caseNum: '11223344',
@@ -49,6 +50,7 @@ const startingNmsnReferralList = [
         nmsnReferralNmsnreferPersorgList: [],
     },
     {
+        nmsnReferralId: '02',
         employerFein: '12121234',
         employeeSsn: '987654321',
         caseNum: '2222222',
@@ -81,25 +83,25 @@ const startingNmsnReferralList = [
     }
 ];
 const nmsnResponsePendingList = [
-    {
-        nmsnReferralReportTypeCd: '4154',
-        nmsnReferralStatusCd: '1565',
-        submissionUser: 'Dave',
-        docTrackingNum: '11111111',
-        employerFein: '159754345',
-        employeeSsn: '551234567',
-        caseNum: '33351',
-        caseTypeCd: '1122',
-        medInsurOrderedFlag: 'Y',
-        nmsnCountryCd: 'US',
-        nmsnStateCd: 'KY',
-        courtName: 'Twelfth Circuit',
-        courtOrderIdent: '4455115',
-        courtOrderDt: '1/6/2020 2:20:47 PM',
-        employeeAdweNtePct: 13,
-        employeeCsoMaxPremium: '5000'
+    // {
+    //     nmsnReferralReportTypeCd: '4154',
+    //     nmsnReferralStatusCd: '1565',
+    //     submissionUser: 'Dave',
+    //     docTrackingNum: '11111111',
+    //     employerFein: '159754345',
+    //     employeeSsn: '551234567',
+    //     caseNum: '33351',
+    //     caseTypeCd: '1122',
+    //     medInsurOrderedFlag: 'Y',
+    //     nmsnCountryCd: 'US',
+    //     nmsnStateCd: 'KY',
+    //     courtName: 'Twelfth Circuit',
+    //     courtOrderIdent: '4455115',
+    //     courtOrderDt: '1/6/2020 2:20:47 PM',
+    //     employeeAdweNtePct: 13,
+    //     employeeCsoMaxPremium: '5000'
 
-    }
+    // }
 ];
 const nmsnResponseHistoricalList = [];
 const nmsnResponseRejectedList = [];
@@ -145,10 +147,17 @@ app.get('/NmsnreferRetrievalService', function (req, res) {
 });
 
 app.post('/NmsnrespUpdateService', function (req, res) {
-    for (let i = 0; i < startingNmsnReferralList.length; i++) {
-        if (startingNmsnReferralList[i].caseNum === req.body.caseNum) {
-
+    if (startingNmsnReferralList.length) {
+        for (let i = 0; i < startingNmsnReferralList.length; i++) {
+            if (startingNmsnReferralList[i].nmsnReferralId === req.body.nmsnReferralId) {
+                nmsnResponsePendingList.push(req.body);
+                startingNmsnReferralList.splice(i, 1);
+                res.json(req.body).end();
+            }
         }
+    } else {
+        console.error('uh oh');
+        res.end();
     }
 });
 
