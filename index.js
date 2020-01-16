@@ -27,7 +27,7 @@ const startingNmsnReferralList = [
         nmsnReferralNmsnResponseList: [],
         nmsnReferralNmsnreferCoverageList: [{
             itemValue: "humanaMedicalPMO",
-            itemLabel:  "Humana PMO"
+            itemLabel: "Humana PMO"
         },
         {
             itemValue: "blueCrossBlueShieldHMO",
@@ -72,7 +72,7 @@ const startingNmsnReferralList = [
         nmsnReferralNmsnResponseList: [],
         nmsnReferralNmsnreferCoverageList: [{
             itemValue: "humanaMedicalPMO",
-            itemLabel:  "Humana PMO"
+            itemLabel: "Humana PMO"
         },
         {
             itemValue: "blueCrossBlueShieldHMO",
@@ -81,32 +81,32 @@ const startingNmsnReferralList = [
         nmsnReferralNmsnreferDependentList: [],
         nmsnReferralNmsnreferPersorgList: [],
     },
-        {
-            nmsnReferralId: '03',
-            employerFein: '54815648',
-            employeeSsn: '987654123',
-            caseNum: '22554488',
-            caseTypeCd: 'AF',
-            medInsurOrderedFlag: 'Y',
-            nmsnCountryCd: 'US',
-            nmsnStateCd: 'MD',
-            courtName: 'Super Circuit',
-            courtOrderId: '11115111',
-            courtOrderDt: new Date(),
-            employeeAdweNtePct: 0,
-            employeeCsoMaxPremium: 500,
-            insuranceStatusCd: 'ACTIVE',
-            planStatusCd: 'ACTIVE',
-            eligibilityDt: new Date(),
-            nonCustodialName: 'Peach, Princess',
-            nmsnReferralReportTypeCd: 'MN',
-            nmsnReferralStatusCd: 'ACCEPTED',
-            nmsnReferralNmsnResponseList: [],
-            nmsnReferralNmsnreferCoverageList: [{
-                itemValue: "humanaMedicalHMO",
-                itemLabel:  "Humana HMO"
-            }],
-            nmsnReferralNmsnreferDependentList: [
+    {
+        nmsnReferralId: '03',
+        employerFein: '54815648',
+        employeeSsn: '987654123',
+        caseNum: '22554488',
+        caseTypeCd: 'AF',
+        medInsurOrderedFlag: 'Y',
+        nmsnCountryCd: 'US',
+        nmsnStateCd: 'MD',
+        courtName: 'Super Circuit',
+        courtOrderId: '11115111',
+        courtOrderDt: new Date(),
+        employeeAdweNtePct: 0,
+        employeeCsoMaxPremium: 500,
+        insuranceStatusCd: 'ACTIVE',
+        planStatusCd: 'ACTIVE',
+        eligibilityDt: new Date(),
+        nonCustodialName: 'Peach, Princess',
+        nmsnReferralReportTypeCd: 'MN',
+        nmsnReferralStatusCd: 'ACCEPTED',
+        nmsnReferralNmsnResponseList: [],
+        nmsnReferralNmsnreferCoverageList: [{
+            itemValue: "humanaMedicalHMO",
+            itemLabel: "Humana HMO"
+        }],
+        nmsnReferralNmsnreferDependentList: [
             {
                 childName: 'Junior, Mario',
                 childSsn: '***-**-6866',
@@ -114,281 +114,262 @@ const startingNmsnReferralList = [
                 childEnrolledFlag: true,
                 childIneligibleFlag: false
             }],
-            nmsnReferralNmsnreferPersorgList: [],
+        nmsnReferralNmsnreferPersorgList: [],
+    },
+    {
+        nmsnReferralId: '04',
+        employerFein: '98989874',
+        employeeSsn: '987321654',
+        caseNum: '44332211',
+        caseTypeCd: 'AF',
+        medInsurOrderedFlag: 'Y',
+        nmsnCountryCd: 'US',
+        nmsnStateCd: 'AK',
+        courtName: 'Yukon Circuit',
+        courtOrderId: '88888888',
+        courtOrderDt: new Date(),
+        employeeAdweNtePct: 0,
+        employeeCsoMaxPremium: 0,
+        insuranceStatusCd: 'ACTIVE',
+        planStatusCd: 'ACTIVE',
+        eligibilityDt: new Date(),
+        nonCustodialName: 'Driscoll, Mister',
+        nmsnReferralReportTypeCd: 'MN',
+        nmsnReferralStatusCd: 'ACCEPTED',
+        nmsnReferralNmsnResponseList: [],
+        nmsnReferralNmsnreferCoverageList: [{
+            itemValue: "humanaMedicalPMO",
+            itemLabel: "Humana PMO"
         },
+        {
+            itemValue: "blueCrossBlueShieldHMO",
+            itemLabel: "Blue Cross Blue Shield HMO"
+        }],
+        nmsnReferralNmsnreferDependentList: [{
+            childName: 'Cantillo, Brock',
+            childSsn: '***-**-1223',
+            childDOB: new Date("May 25, 1997 01:15:00"),
+            childEnrolledFlag: true,
+            childIneligibleFlag: false
+        }],
+        nmsnReferralNmsnreferPersorgList: [],
+    },
+    {
+        nmsnReferralId: '05',
+        employerFein: '32323256',
+        employeeSsn: '987796321',
+        caseNum: '44556677',
+        caseTypeCd: 'AF',
+        medInsurOrderedFlag: 'Y',
+        nmsnCountryCd: 'US',
+        nmsnStateCd: 'NM',
+        courtName: 'First Appeals Circuit',
+        courtOrderId: '22222222',
+        courtOrderDt: new Date(),
+        employeeAdweNtePct: 0,
+        employeeCsoMaxPremium: 0,
+        insuranceStatusCd: 'ACTIVE',
+        planStatusCd: 'ACTIVE',
+        eligibilityDt: new Date(),
+        nonCustodialName: 'Goodman, Saul',
+        nmsnReferralReportTypeCd: 'MN',
+        nmsnReferralStatusCd: 'ACCEPTED',
+        nmsnReferralNmsnResponseList: [],
+        nmsnReferralNmsnreferCoverageList: [
             {
-                nmsnReferralId: '04',
-                employerFein: '98989874',
-                employeeSsn: '987321654',
-                caseNum: '44332211',
-                caseTypeCd: 'AF',
-                medInsurOrderedFlag: 'Y',
-                nmsnCountryCd: 'US',
-                nmsnStateCd: 'AK',
-                courtName: 'Yukon Circuit',
-                courtOrderId: '88888888',
-                courtOrderDt: new Date(),
-                employeeAdweNtePct: 0,
-                employeeCsoMaxPremium: 0,
-                insuranceStatusCd: 'ACTIVE',
-                planStatusCd: 'ACTIVE',
-                eligibilityDt: new Date(),
-                nonCustodialName: 'Driscoll, Mister',
-                nmsnReferralReportTypeCd: 'MN',
-                nmsnReferralStatusCd: 'ACCEPTED',
-                nmsnReferralNmsnResponseList: [],
-                nmsnReferralNmsnreferCoverageList: [{
-                    itemValue: "humanaMedicalPMO",
-                    itemLabel:  "Humana PMO"
-                },
-                {
-                    itemValue: "blueCrossBlueShieldHMO",
-                    itemLabel: "Blue Cross Blue Shield HMO"
-                }],
-                nmsnReferralNmsnreferDependentList: [{
-                    childName: 'Cantillo, Brock',
-                    childSsn: '***-**-1223',
-                    childDOB: new Date("May 25, 1997 01:15:00"),
-                    childEnrolledFlag: true,
-                    childIneligibleFlag: false
-                }],
-                nmsnReferralNmsnreferPersorgList: [],
-            },
-                {
-                    nmsnReferralId: '05',
-                    employerFein: '32323256',
-                    employeeSsn: '987796321',
-                    caseNum: '44556677',
-                    caseTypeCd: 'AF',
-                    medInsurOrderedFlag: 'Y',
-                    nmsnCountryCd: 'US',
-                    nmsnStateCd: 'NM',
-                    courtName: 'First Appeals Circuit',
-                    courtOrderId: '22222222',
-                    courtOrderDt: new Date(),
-                    employeeAdweNtePct: 0,
-                    employeeCsoMaxPremium: 0,
-                    insuranceStatusCd: 'ACTIVE',
-                    planStatusCd: 'ACTIVE',
-                    eligibilityDt: new Date(),
-                    nonCustodialName: 'Goodman, Saul',
-                    nmsnReferralReportTypeCd: 'MN',
-                    nmsnReferralStatusCd: 'ACCEPTED',
-                    nmsnReferralNmsnResponseList: [],
-                    nmsnReferralNmsnreferCoverageList: [
-                    {
-                        itemValue: "blueCrossBlueShieldHMO",
-                        itemLabel: "Blue Cross Blue Shield HMO"
-                    }],
-                    nmsnReferralNmsnreferDependentList: [{
-                        childName: 'Goodman, Brain',
-                        childSsn: '***-**-4224',
-                        childDOB: new Date("March 15, 1991 01:15:38"),
-                        childEnrolledFlag: true,
-                        childIneligibleFlag: false
-                    },
-                    {
-                        childName: 'Goodman, Gooby',
-                        childSsn: '***-**-4321',
-                        childDOB: new Date("May 31, 1981 01:14:00"),
-                        childEnrolledFlag: true,
-                        childIneligibleFlag: false
-                    }],
-                    nmsnReferralNmsnreferPersorgList: [],
-                },
-                   {
-                       nmsnReferralId: '06',
-                       employerFein: '78787896',
-                       employeeSsn: '789456123',
-                       caseNum: '55994488',
-                       caseTypeCd: 'AF',
-                       medInsurOrderedFlag: 'Y',
-                       nmsnCountryCd: 'US',
-                       nmsnStateCd: 'TX',
-                       courtName: 'Second Municipal',
-                       courtOrderId: '00000001',
-                       courtOrderDt: new Date(),
-                       employeeAdweNtePct: 0,
-                       employeeCsoMaxPremium: 0,
-                       insuranceStatusCd: 'ACTIVE',
-                       planStatusCd: 'ACTIVE',
-                       eligibilityDt: new Date(),
-                       nonCustodialName: 'Montgomery, Brenna',
-                       nmsnReferralReportTypeCd: 'MN',
-                       nmsnReferralStatusCd: 'ACCEPTED',
-                       nmsnReferralNmsnResponseList: [],
-                       nmsnReferralNmsnreferCoverageList: [{
-                           itemValue: "humanaAnimalPMO",
-                           itemLabel:  "Animal PMO"
-                       }],
-                       nmsnReferralNmsnreferDependentList: [],
-                       nmsnReferralNmsnreferPersorgList: [],
-                   },
-                       {
-                           nmsnReferralId: '07',
-                           employerFein: '9874568',
-                           employeeSsn: '123789456',
-                           caseNum: '00112233',
-                           caseTypeCd: 'AF',
-                           medInsurOrderedFlag: 'Y',
-                           nmsnCountryCd: 'US',
-                           nmsnStateCd: 'LA',
-                           courtName: 'Parish Circuit',
-                           courtOrderId: '00000055',
-                           courtOrderDt: new Date(),
-                           employeeAdweNtePct: 0,
-                           employeeCsoMaxPremium: 0,
-                           insuranceStatusCd: 'ACTIVE',
-                           planStatusCd: 'ACTIVE',
-                           eligibilityDt: new Date(),
-                           nonCustodialName: 'Bates, Trudy',
-                           nmsnReferralReportTypeCd: 'MN',
-                           nmsnReferralStatusCd: 'ACCEPTED',
-                           nmsnReferralNmsnResponseList: [],
-                           nmsnReferralNmsnreferCoverageList: [
-                           {
-                               itemValue: "blueCrossBlueShieldHMO",
-                               itemLabel: "Blue Cross Blue Shield HMO"
-                           }],
-                           nmsnReferralNmsnreferDependentList: [{
-                               childName: 'Bates, Alex',
-                               childSsn: '***-**-1223',
-                               childDOB: new Date("February 01, 1993 12:15:00"),
-                               childEnrolledFlag: false,
-                               childIneligibleFlag: true
-                           }],
-                           nmsnReferralNmsnreferPersorgList: [],
-                       },
-                           {
-                               nmsnReferralId: '08',
-                               employerFein: '32323215',
-                               employeeSsn: '45456789',
-                               caseNum: '88776655',
-                               caseTypeCd: 'AF',
-                               medInsurOrderedFlag: 'Y',
-                               nmsnCountryCd: 'US',
-                               nmsnStateCd: 'LA',
-                               courtName: 'Not Applicable',
-                               courtOrderId: '12121212',
-                               courtOrderDt: new Date(),
-                               employeeAdweNtePct: 0,
-                               employeeCsoMaxPremium: 0,
-                               insuranceStatusCd: 'ACTIVE',
-                               planStatusCd: 'ACTIVE',
-                               eligibilityDt: new Date(),
-                               nonCustodialName: 'Parsons, Connor',
-                               nmsnReferralReportTypeCd: 'MN',
-                               nmsnReferralStatusCd: 'ACCEPTED',
-                               nmsnReferralNmsnResponseList: [],
-                               nmsnReferralNmsnreferCoverageList: [{
-                                   itemValue: "humanaMedicalPMO",
-                                   itemLabel:  "Humana PMO"
-                               },
-                               {
-                                   itemValue: "blueCrossBlueShieldHMO",
-                                   itemLabel: "Blue Cross Blue Shield HMO"
-                               }],
-                               nmsnReferralNmsnreferDependentList: [],
-                               nmsnReferralNmsnreferPersorgList: [],
-                           },
-                               {
-                                   nmsnReferralId: '09',
-                                   employerFein: '88445511',
-                                   employeeSsn: '159489156',
-                                   caseNum: '55114488',
-                                   caseTypeCd: 'AF',
-                                   medInsurOrderedFlag: 'Y',
-                                   nmsnCountryCd: 'US',
-                                   nmsnStateCd: 'TX',
-                                   courtName: 'Dripping Springs Municipal Court',
-                                   courtOrderId: '99999999',
-                                   courtOrderDt: new Date(),
-                                   employeeAdweNtePct: 0,
-                                   employeeCsoMaxPremium: 0,
-                                   insuranceStatusCd: 'ACTIVE',
-                                   planStatusCd: 'ACTIVE',
-                                   eligibilityDt: new Date(),
-                                   nonCustodialName: 'Farmer, Kelley',
-                                   nmsnReferralReportTypeCd: 'MN',
-                                   nmsnReferralStatusCd: 'ACCEPTED',
-                                   nmsnReferralNmsnResponseList: [],
-                                   nmsnReferralNmsnreferCoverageList: [{
-                                       itemValue: "humanaMedicalPMO",
-                                       itemLabel:  "Humana PMO"
-                                   },
-                                   {
-                                       itemValue: "blueCrossBlueShieldHMO",
-                                       itemLabel: "Blue Cross Blue Shield HMO"
-                                   }],
-                                   nmsnReferralNmsnreferDependentList: [{
-                                       childName: 'Murray, Matthew',
-                                       childSsn: '***-**-2262',
-                                       childDOB: new Date("August 7, 1991 01:15:00"),
-                                       childEnrolledFlag: false,
-                                       childIneligibleFlag: true
-                                   },
-                                   {
-                                       childName: 'Murray, William',
-                                       childSsn: '***-**-1233',
-                                       childDOB: new Date("April 19, 1995 01:15:00"),
-                                       childEnrolledFlag: true,
-                                       childIneligibleFlag: false
-                                   }],
-                                   nmsnReferralNmsnreferPersorgList: [],
-                               },
-                                   {
-                                       nmsnReferralId: '10',
-                                       employerFein: '15948155',
-                                       employeeSsn: '115599448',
-                                       caseNum: '88445511',
-                                       caseTypeCd: 'AF',
-                                       medInsurOrderedFlag: 'Y',
-                                       nmsnCountryCd: 'US',
-                                       nmsnStateCd: 'NV',
-                                       courtName: 'Las Vegas District 8',
-                                       courtOrderId: '00048918',
-                                       courtOrderDt: new Date(),
-                                       employeeAdweNtePct: 0,
-                                       employeeCsoMaxPremium: 0,
-                                       insuranceStatusCd: 'ACTIVE',
-                                       planStatusCd: 'ACTIVE',
-                                       eligibilityDt: new Date(),
-                                       nonCustodialName: 'Shakur, Tupac',
-                                       nmsnReferralReportTypeCd: 'MN',
-                                       nmsnReferralStatusCd: 'ACCEPTED',
-                                       nmsnReferralNmsnResponseList: [],
-                                       nmsnReferralNmsnreferCoverageList: [],
-                                       nmsnReferralNmsnreferDependentList: [{
-                                           childName: 'Lamar, Kendrick',
-                                           childSsn: '***-**-1223',
-                                           childDOB: new Date("May 25, 1987 01:15:00"),
-                                           childEnrolledFlag: true,
-                                           childIneligibleFlag: false
-                                       }],
-                                       nmsnReferralNmsnreferPersorgList: [],
-                                   },
+                itemValue: "blueCrossBlueShieldHMO",
+                itemLabel: "Blue Cross Blue Shield HMO"
+            }],
+        nmsnReferralNmsnreferDependentList: [{
+            childName: 'Goodman, Brain',
+            childSsn: '***-**-4224',
+            childDOB: new Date("March 15, 1991 01:15:38"),
+            childEnrolledFlag: true,
+            childIneligibleFlag: false
+        },
+        {
+            childName: 'Goodman, Gooby',
+            childSsn: '***-**-4321',
+            childDOB: new Date("May 31, 1981 01:14:00"),
+            childEnrolledFlag: true,
+            childIneligibleFlag: false
+        }],
+        nmsnReferralNmsnreferPersorgList: [],
+    },
+    {
+        nmsnReferralId: '06',
+        employerFein: '78787896',
+        employeeSsn: '789456123',
+        caseNum: '55994488',
+        caseTypeCd: 'AF',
+        medInsurOrderedFlag: 'Y',
+        nmsnCountryCd: 'US',
+        nmsnStateCd: 'TX',
+        courtName: 'Second Municipal',
+        courtOrderId: '00000001',
+        courtOrderDt: new Date(),
+        employeeAdweNtePct: 0,
+        employeeCsoMaxPremium: 0,
+        insuranceStatusCd: 'ACTIVE',
+        planStatusCd: 'ACTIVE',
+        eligibilityDt: new Date(),
+        nonCustodialName: 'Montgomery, Brenna',
+        nmsnReferralReportTypeCd: 'MN',
+        nmsnReferralStatusCd: 'ACCEPTED',
+        nmsnReferralNmsnResponseList: [],
+        nmsnReferralNmsnreferCoverageList: [{
+            itemValue: "humanaAnimalPMO",
+            itemLabel: "Animal PMO"
+        }],
+        nmsnReferralNmsnreferDependentList: [],
+        nmsnReferralNmsnreferPersorgList: [],
+    },
+    {
+        nmsnReferralId: '07',
+        employerFein: '9874568',
+        employeeSsn: '123789456',
+        caseNum: '00112233',
+        caseTypeCd: 'AF',
+        medInsurOrderedFlag: 'Y',
+        nmsnCountryCd: 'US',
+        nmsnStateCd: 'LA',
+        courtName: 'Parish Circuit',
+        courtOrderId: '00000055',
+        courtOrderDt: new Date(),
+        employeeAdweNtePct: 0,
+        employeeCsoMaxPremium: 0,
+        insuranceStatusCd: 'ACTIVE',
+        planStatusCd: 'ACTIVE',
+        eligibilityDt: new Date(),
+        nonCustodialName: 'Bates, Trudy',
+        nmsnReferralReportTypeCd: 'MN',
+        nmsnReferralStatusCd: 'ACCEPTED',
+        nmsnReferralNmsnResponseList: [],
+        nmsnReferralNmsnreferCoverageList: [
+            {
+                itemValue: "blueCrossBlueShieldHMO",
+                itemLabel: "Blue Cross Blue Shield HMO"
+            }],
+        nmsnReferralNmsnreferDependentList: [{
+            childName: 'Bates, Alex',
+            childSsn: '***-**-1223',
+            childDOB: new Date("February 01, 1993 12:15:00"),
+            childEnrolledFlag: false,
+            childIneligibleFlag: true
+        }],
+        nmsnReferralNmsnreferPersorgList: [],
+    },
+    {
+        nmsnReferralId: '08',
+        employerFein: '32323215',
+        employeeSsn: '45456789',
+        caseNum: '88776655',
+        caseTypeCd: 'AF',
+        medInsurOrderedFlag: 'Y',
+        nmsnCountryCd: 'US',
+        nmsnStateCd: 'LA',
+        courtName: 'Not Applicable',
+        courtOrderId: '12121212',
+        courtOrderDt: new Date(),
+        employeeAdweNtePct: 0,
+        employeeCsoMaxPremium: 0,
+        insuranceStatusCd: 'ACTIVE',
+        planStatusCd: 'ACTIVE',
+        eligibilityDt: new Date(),
+        nonCustodialName: 'Parsons, Connor',
+        nmsnReferralReportTypeCd: 'MN',
+        nmsnReferralStatusCd: 'ACCEPTED',
+        nmsnReferralNmsnResponseList: [],
+        nmsnReferralNmsnreferCoverageList: [{
+            itemValue: "humanaMedicalPMO",
+            itemLabel: "Humana PMO"
+        },
+        {
+            itemValue: "blueCrossBlueShieldHMO",
+            itemLabel: "Blue Cross Blue Shield HMO"
+        }],
+        nmsnReferralNmsnreferDependentList: [],
+        nmsnReferralNmsnreferPersorgList: [],
+    },
+    {
+        nmsnReferralId: '09',
+        employerFein: '88445511',
+        employeeSsn: '159489156',
+        caseNum: '55114488',
+        caseTypeCd: 'AF',
+        medInsurOrderedFlag: 'Y',
+        nmsnCountryCd: 'US',
+        nmsnStateCd: 'TX',
+        courtName: 'Dripping Springs Municipal Court',
+        courtOrderId: '99999999',
+        courtOrderDt: new Date(),
+        employeeAdweNtePct: 0,
+        employeeCsoMaxPremium: 0,
+        insuranceStatusCd: 'ACTIVE',
+        planStatusCd: 'ACTIVE',
+        eligibilityDt: new Date(),
+        nonCustodialName: 'Farmer, Kelley',
+        nmsnReferralReportTypeCd: 'MN',
+        nmsnReferralStatusCd: 'ACCEPTED',
+        nmsnReferralNmsnResponseList: [],
+        nmsnReferralNmsnreferCoverageList: [{
+            itemValue: "humanaMedicalPMO",
+            itemLabel: "Humana PMO"
+        },
+        {
+            itemValue: "blueCrossBlueShieldHMO",
+            itemLabel: "Blue Cross Blue Shield HMO"
+        }],
+        nmsnReferralNmsnreferDependentList: [{
+            childName: 'Murray, Matthew',
+            childSsn: '***-**-2262',
+            childDOB: new Date("August 7, 1991 01:15:00"),
+            childEnrolledFlag: false,
+            childIneligibleFlag: true
+        },
+        {
+            childName: 'Murray, William',
+            childSsn: '***-**-1233',
+            childDOB: new Date("April 19, 1995 01:15:00"),
+            childEnrolledFlag: true,
+            childIneligibleFlag: false
+        }],
+        nmsnReferralNmsnreferPersorgList: [],
+    },
+    {
+        nmsnReferralId: '10',
+        employerFein: '15948155',
+        employeeSsn: '115599448',
+        caseNum: '88445511',
+        caseTypeCd: 'AF',
+        medInsurOrderedFlag: 'Y',
+        nmsnCountryCd: 'US',
+        nmsnStateCd: 'NV',
+        courtName: 'Las Vegas District 8',
+        courtOrderId: '00048918',
+        courtOrderDt: new Date(),
+        employeeAdweNtePct: 0,
+        employeeCsoMaxPremium: 0,
+        insuranceStatusCd: 'ACTIVE',
+        planStatusCd: 'ACTIVE',
+        eligibilityDt: new Date(),
+        nonCustodialName: 'Shakur, Tupac',
+        nmsnReferralReportTypeCd: 'MN',
+        nmsnReferralStatusCd: 'ACCEPTED',
+        nmsnReferralNmsnResponseList: [],
+        nmsnReferralNmsnreferCoverageList: [],
+        nmsnReferralNmsnreferDependentList: [{
+            childName: 'Lamar, Kendrick',
+            childSsn: '***-**-1223',
+            childDOB: new Date("May 25, 1987 01:15:00"),
+            childEnrolledFlag: true,
+            childIneligibleFlag: false
+        }],
+        nmsnReferralNmsnreferPersorgList: [],
+    },
 ];
-const nmsnResponsePendingList = [
-    // {
-    //     nmsnReferralReportTypeCd: '4154',
-    //     nmsnReferralStatusCd: '1565',
-    //     submissionUser: 'Dave',
-    //     docTrackingNum: '11111111',
-    //     employerFein: '159754345',
-    //     employeeSsn: '551234567',
-    //     caseNum: '33351',
-    //     caseTypeCd: '1122',
-    //     medInsurOrderedFlag: 'Y',
-    //     nmsnCountryCd: 'US',
-    //     nmsnStateCd: 'KY',
-    //     courtName: 'Twelfth Circuit',
-    //     courtOrderIdent: '4455115',
-    //     courtOrderDt: '1/6/2020 2:20:47 PM',
-    //     employeeAdweNtePct: 13,
-    //     employeeCsoMaxPremium: '5000'
-
-    // }
-];
+const referralsWithResponses = [];
+const nmsnResponsePendingList = [];
 const nmsnResponseHistoricalList = [];
 const nmsnResponseRejectedList = [];
 
@@ -432,11 +413,16 @@ app.get('/NmsnreferRetrievalService', function (req, res) {
     res.end();
 });
 
+app.get('/NmsnReferWithResponses', function (req, res) {
+    res.status('200').json(referralsWithResponses).end();
+})
+
 app.post('/NmsnrespUpdateService', function (req, res) {
     if (startingNmsnReferralList.length) {
         for (let i = 0; i < startingNmsnReferralList.length; i++) {
             if (startingNmsnReferralList[i].nmsnReferralId === req.body.nmsnReferralId) {
                 nmsnResponsePendingList.push(req.body);
+                referralsWithResponses.push(startingNmsnReferralList[i]);
                 startingNmsnReferralList.splice(i, 1);
                 res.json(req.body).end();
             }
