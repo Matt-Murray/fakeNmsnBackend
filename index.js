@@ -133,7 +133,7 @@ const startingNmsnReferralList = [
                 insuranceStatusCd: 'ACTIVE',
                 planStatusCd: 'ACTIVE',
                 eligibilityDt: new Date(),
-                nonCustodialName: 'Driscoll, Mr.',
+                nonCustodialName: 'Driscoll, Mister',
                 nmsnReferralReportTypeCd: 'MN',
                 nmsnReferralStatusCd: 'ACCEPTED',
                 nmsnReferralNmsnResponseList: [],
@@ -447,10 +447,10 @@ app.post('/NmsnrespUpdateService', function (req, res) {
     }
 });
 
-app.listen(8080, (err) => {
+app.listen(8088, (err) => {
     if (!err) {
-        console.log('listening on 8080!')
+        console.log('listening on 8088!')
     } else {
-        console.log('you sucks')
+        console.log('you sucks lol')
     }
 })
