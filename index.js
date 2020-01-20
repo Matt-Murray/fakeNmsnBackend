@@ -26,12 +26,12 @@ const startingNmsnReferralList = [
         nmsnReferralStatusCd: 'ACCEPTED',
         nmsnReferralNmsnResponseList: [],
         nmsnReferralNmsnreferCoverageList: [{
-            itemValue: "humanaMedicalPMO",
-            itemLabel: "Humana PMO"
+            itemValue: "blueCrossBlueShieldMedical",
+            itemLabel: "Blue Cross Blue Shield - Dental"
         },
         {
-            itemValue: "blueCrossBlueShieldHMO",
-            itemLabel: "Blue Cross Blue Shield HMO"
+            itemValue: "blueCrossBlueShieldMedical",
+            itemLabel: "Blue Cross Blue Shield - Medical"
         }],
         nmsnReferralNmsnreferDependentList: [{
             childName: 'Skywalker, Luke',
@@ -71,12 +71,12 @@ const startingNmsnReferralList = [
         nmsnReferralStatusCd: 'ACCEPTED',
         nmsnReferralNmsnResponseList: [],
         nmsnReferralNmsnreferCoverageList: [{
-            itemValue: "humanaMedicalPMO",
-            itemLabel: "Humana PMO"
+            itemValue: "blueCrossBlueShieldMedical",
+            itemLabel: "Blue Cross Blue Shield - Dental"
         },
         {
-            itemValue: "blueCrossBlueShieldHMO",
-            itemLabel: "Blue Cross Blue Shield HMO"
+            itemValue: "blueCrossBlueShieldMedical",
+            itemLabel: "Blue Cross Blue Shield - Medical"
         }],
         nmsnReferralNmsnreferDependentList: [],
         nmsnReferralNmsnreferPersorgList: [],
@@ -103,8 +103,12 @@ const startingNmsnReferralList = [
         nmsnReferralStatusCd: 'ACCEPTED',
         nmsnReferralNmsnResponseList: [],
         nmsnReferralNmsnreferCoverageList: [{
-            itemValue: "humanaMedicalHMO",
-            itemLabel: "Humana HMO"
+            itemValue: "blueCrossBlueShieldMedical",
+            itemLabel: "Blue Cross Blue Shield - Dental"
+        },
+        {
+            itemValue: "blueCrossBlueShieldMedical",
+            itemLabel: "Blue Cross Blue Shield - Medical"
         }],
         nmsnReferralNmsnreferDependentList: [
             {
@@ -138,12 +142,12 @@ const startingNmsnReferralList = [
         nmsnReferralStatusCd: 'ACCEPTED',
         nmsnReferralNmsnResponseList: [],
         nmsnReferralNmsnreferCoverageList: [{
-            itemValue: "humanaMedicalPMO",
-            itemLabel: "Humana PMO"
+            itemValue: "blueCrossBlueShieldMedical",
+            itemLabel: "Blue Cross Blue Shield - Dental"
         },
         {
-            itemValue: "blueCrossBlueShieldHMO",
-            itemLabel: "Blue Cross Blue Shield HMO"
+            itemValue: "blueCrossBlueShieldMedical",
+            itemLabel: "Blue Cross Blue Shield - Medical"
         }],
         nmsnReferralNmsnreferDependentList: [{
             childName: 'Cantillo, Brock',
@@ -175,11 +179,14 @@ const startingNmsnReferralList = [
         nmsnReferralReportTypeCd: 'MN',
         nmsnReferralStatusCd: 'ACCEPTED',
         nmsnReferralNmsnResponseList: [],
-        nmsnReferralNmsnreferCoverageList: [
-            {
-                itemValue: "blueCrossBlueShieldHMO",
-                itemLabel: "Blue Cross Blue Shield HMO"
-            }],
+        nmsnReferralNmsnreferCoverageList: [{
+            itemValue: "blueCrossBlueShieldMedical",
+            itemLabel: "Blue Cross Blue Shield - Dental"
+        },
+        {
+            itemValue: "blueCrossBlueShieldMedical",
+            itemLabel: "Blue Cross Blue Shield - Medical"
+        }],
         nmsnReferralNmsnreferDependentList: [{
             childName: 'Goodman, Brain',
             childSsn: '***-**-4224',
@@ -218,8 +225,12 @@ const startingNmsnReferralList = [
         nmsnReferralStatusCd: 'ACCEPTED',
         nmsnReferralNmsnResponseList: [],
         nmsnReferralNmsnreferCoverageList: [{
-            itemValue: "humanaAnimalPMO",
-            itemLabel: "Animal PMO"
+            itemValue: "blueCrossBlueShieldMedical",
+            itemLabel: "Blue Cross Blue Shield - Dental"
+        },
+        {
+            itemValue: "blueCrossBlueShieldMedical",
+            itemLabel: "Blue Cross Blue Shield - Medical"
         }],
         nmsnReferralNmsnreferDependentList: [],
         nmsnReferralNmsnreferPersorgList: [],
@@ -245,11 +256,14 @@ const startingNmsnReferralList = [
         nmsnReferralReportTypeCd: 'MN',
         nmsnReferralStatusCd: 'ACCEPTED',
         nmsnReferralNmsnResponseList: [],
-        nmsnReferralNmsnreferCoverageList: [
-            {
-                itemValue: "blueCrossBlueShieldHMO",
-                itemLabel: "Blue Cross Blue Shield HMO"
-            }],
+        nmsnReferralNmsnreferCoverageList: [{
+            itemValue: "blueCrossBlueShieldMedical",
+            itemLabel: "Blue Cross Blue Shield - Dental"
+        },
+        {
+            itemValue: "blueCrossBlueShieldMedical",
+            itemLabel: "Blue Cross Blue Shield - Medical"
+        }],
         nmsnReferralNmsnreferDependentList: [{
             childName: 'Bates, Alex',
             childSsn: '***-**-1223',
@@ -281,12 +295,12 @@ const startingNmsnReferralList = [
         nmsnReferralStatusCd: 'ACCEPTED',
         nmsnReferralNmsnResponseList: [],
         nmsnReferralNmsnreferCoverageList: [{
-            itemValue: "humanaMedicalPMO",
-            itemLabel: "Humana PMO"
+            itemValue: "blueCrossBlueShieldMedical",
+            itemLabel: "Blue Cross Blue Shield - Dental"
         },
         {
-            itemValue: "blueCrossBlueShieldHMO",
-            itemLabel: "Blue Cross Blue Shield HMO"
+            itemValue: "blueCrossBlueShieldMedical",
+            itemLabel: "Blue Cross Blue Shield - Medical"
         }],
         nmsnReferralNmsnreferDependentList: [],
         nmsnReferralNmsnreferPersorgList: [],
@@ -313,12 +327,12 @@ const startingNmsnReferralList = [
         nmsnReferralStatusCd: 'ACCEPTED',
         nmsnReferralNmsnResponseList: [],
         nmsnReferralNmsnreferCoverageList: [{
-            itemValue: "humanaMedicalPMO",
-            itemLabel: "Humana PMO"
+            itemValue: "blueCrossBlueShieldMedical",
+            itemLabel: "Blue Cross Blue Shield - Dental"
         },
         {
-            itemValue: "blueCrossBlueShieldHMO",
-            itemLabel: "Blue Cross Blue Shield HMO"
+            itemValue: "blueCrossBlueShieldMedical",
+            itemLabel: "Blue Cross Blue Shield - Medical"
         }],
         nmsnReferralNmsnreferDependentList: [{
             childName: 'Murray, Matthew',
@@ -357,7 +371,14 @@ const startingNmsnReferralList = [
         nmsnReferralReportTypeCd: 'MN',
         nmsnReferralStatusCd: 'ACCEPTED',
         nmsnReferralNmsnResponseList: [],
-        nmsnReferralNmsnreferCoverageList: [],
+        nmsnReferralNmsnreferCoverageList: [{
+            itemValue: "blueCrossBlueShieldMedical",
+            itemLabel: "Blue Cross Blue Shield - Dental"
+        },
+        {
+            itemValue: "blueCrossBlueShieldMedical",
+            itemLabel: "Blue Cross Blue Shield - Medical"
+        }],
         nmsnReferralNmsnreferDependentList: [{
             childName: 'Lamar, Kendrick',
             childSsn: '***-**-1223',
@@ -368,7 +389,99 @@ const startingNmsnReferralList = [
         nmsnReferralNmsnreferPersorgList: [],
     },
 ];
-const referralsWithResponses = [];
+const referralsWithResponses = [
+    {
+        nmsnReferralId: '01',
+        employerFein: '12121234',
+        employeeSsn: '123456789',
+        caseNum: '51084536',
+        caseTypeCd: 'AF',
+        medInsurOrderedFlag: 'Y',
+        nmsnCountryCd: 'US',
+        nmsnStateCd: 'GA',
+        courtName: 'Eleventh Circuit',
+        courtOrderId: '11111111',
+        courtOrderDt: new Date(),
+        employeeAdweNtePct: 0,
+        employeeCsoMaxPremium: 0,
+        insuranceStatusCd: 'ACTIVE',
+        planStatusCd: 'ACTIVE',
+        eligibilityDt: new Date(),
+        nonCustodialName: 'Knope, Leslie',
+        nmsnReferralReportTypeCd: 'MN',
+        nmsnReferralStatusCd: 'ACCEPTED',
+        nmsnReferralNmsnResponseList: [],
+        nmsnReferralNmsnreferCoverageList: [{
+            itemValue: "blueCrossBlueShieldMedical",
+            itemLabel: "Blue Cross Blue Shield - Dental"
+        },
+        {
+            itemValue: "blueCrossBlueShieldMedical",
+            itemLabel: "Blue Cross Blue Shield - Medical"
+        }],
+        nmsnReferralNmsnreferDependentList: [{
+            childName: 'Wyatt, Ron',
+            childSsn: '***-**-1223',
+            childDOB: new Date("May 25, 1977 01:15:00"),
+            childEnrolledFlag: true,
+            childIneligibleFlag: false
+        },
+        {
+            childName: 'Wyatt, Anne',
+            childSsn: '***-**-1234',
+            childDOB: new Date("May 25, 1977 01:15:00"),
+            childEnrolledFlag: true,
+            childIneligibleFlag: false
+        }],
+        nmsnReferralNmsnreferPersorgList: [],
+    },
+
+    {
+        nmsnReferralId: '01',
+        employerFein: '12121234',
+        employeeSsn: '123456789',
+        caseNum: '51884726',
+        caseTypeCd: 'AF',
+        medInsurOrderedFlag: 'Y',
+        nmsnCountryCd: 'US',
+        nmsnStateCd: 'GA',
+        courtName: 'Eleventh Circuit',
+        courtOrderId: '11111111',
+        courtOrderDt: new Date(),
+        employeeAdweNtePct: 0,
+        employeeCsoMaxPremium: 0,
+        insuranceStatusCd: 'ACTIVE',
+        planStatusCd: 'ACTIVE',
+        eligibilityDt: new Date(),
+        nonCustodialName: 'Knope, Leslie',
+        nmsnReferralReportTypeCd: 'MN',
+        nmsnReferralStatusCd: 'ACCEPTED',
+        nmsnReferralNmsnResponseList: [],
+        nmsnReferralNmsnreferCoverageList: [{
+            itemValue: "blueCrossBlueShieldMedical",
+            itemLabel: "Blue Cross Blue Shield - Dental"
+        },
+        {
+            itemValue: "blueCrossBlueShieldMedical",
+            itemLabel: "Blue Cross Blue Shield - Medical"
+        }],
+        nmsnReferralNmsnreferDependentList: [{
+            childName: 'Wyatt, Ron',
+            childSsn: '***-**-1223',
+            childDOB: new Date("May 25, 1977 01:15:00"),
+            childEnrolledFlag: true,
+            childIneligibleFlag: false
+        },
+        {
+            childName: 'Wyatt, Anne',
+            childSsn: '***-**-1234',
+            childDOB: new Date("May 25, 1977 01:15:00"),
+            childEnrolledFlag: true,
+            childIneligibleFlag: false
+        }],
+        nmsnReferralNmsnreferPersorgList: [],
+    }
+];
 const nmsnResponsePendingList = [];
 
 const nmsnResponseHistoricalList = [
@@ -386,7 +499,7 @@ const nmsnResponseHistoricalList = [
         employeeSsn: "123456789",
         enrolledOption: "",
         enrollmentPermittedFlag: "N",
-        enrollmentStatusCd: "TERMINATED",
+        enrollmentStatusCd: "ACTIVE",
         forwardToPlanAdminDt: null,
         ineligibleChildNames: "",
         insuranceStatusCd: "ACTIVE",
@@ -466,7 +579,7 @@ const nmsnResponseHistoricalList = [
             employeeSsn: "518474156",
             enrolledOption: "",
             enrollmentPermittedFlag: "N",
-            enrollmentStatusCd: "TERMINATED",
+            enrollmentStatusCd: "ACTIVE",
             forwardToPlanAdminDt: null,
             ineligibleChildNames: "",
             insuranceStatusCd: "ACTIVE",
@@ -550,7 +663,7 @@ const nmsnResponseRejectedList = [
         employeeSsn: "987582159",
         enrolledOption: "",
         enrollmentPermittedFlag: "N",
-        enrollmentStatusCd: "TERMINATED",
+        enrollmentStatusCd: "ACTIVE",
         forwardToPlanAdminDt: null,
         ineligibleChildNames: "",
         insuranceStatusCd: "ACTIVE",
