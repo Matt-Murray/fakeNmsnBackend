@@ -3,6 +3,8 @@ const express = require('express');
 const app = express();
 const bodyParser = require('body-parser')
 
+let responseId = 0;
+
 const startingNmsnReferralList = [
     {
         nmsnReferralId: '01',
@@ -389,100 +391,6 @@ const startingNmsnReferralList = [
         nmsnReferralNmsnreferPersorgList: [],
     },
 ];
-const referralsWithResponses = [
-    {
-        nmsnReferralId: '01',
-        employerFein: '12121234',
-        employeeSsn: '123456789',
-        caseNum: '51084536',
-        caseTypeCd: 'AF',
-        medInsurOrderedFlag: 'Y',
-        nmsnCountryCd: 'US',
-        nmsnStateCd: 'GA',
-        courtName: 'Eleventh Circuit',
-        courtOrderId: '11111111',
-        courtOrderDt: new Date(),
-        employeeAdweNtePct: 0,
-        employeeCsoMaxPremium: 0,
-        insuranceStatusCd: 'ACTIVE',
-        planStatusCd: 'ACTIVE',
-        eligibilityDt: new Date(),
-        nonCustodialName: 'Knope, Leslie',
-        nmsnReferralReportTypeCd: 'MN',
-        nmsnReferralStatusCd: 'ACCEPTED',
-        nmsnReferralNmsnResponseList: [],
-        nmsnReferralNmsnreferCoverageList: [{
-            itemValue: "blueCrossBlueShieldMedical",
-            itemLabel: "Blue Cross Blue Shield - Dental"
-        },
-        {
-            itemValue: "blueCrossBlueShieldMedical",
-            itemLabel: "Blue Cross Blue Shield - Medical"
-        }],
-        nmsnReferralNmsnreferDependentList: [{
-            childName: 'Wyatt, Ron',
-            childSsn: '***-**-1223',
-            childDOB: new Date("May 25, 1977 01:15:00"),
-            childEnrolledFlag: true,
-            childIneligibleFlag: false
-        },
-        {
-            childName: 'Wyatt, Anne',
-            childSsn: '***-**-1234',
-            childDOB: new Date("May 25, 1977 01:15:00"),
-            childEnrolledFlag: true,
-            childIneligibleFlag: false
-        }],
-        nmsnReferralNmsnreferPersorgList: [],
-    },
-
-    {
-        nmsnReferralId: '01',
-        employerFein: '12121234',
-        employeeSsn: '123456789',
-        caseNum: '51884726',
-        caseTypeCd: 'AF',
-        medInsurOrderedFlag: 'Y',
-        nmsnCountryCd: 'US',
-        nmsnStateCd: 'GA',
-        courtName: 'Eleventh Circuit',
-        courtOrderId: '11111111',
-        courtOrderDt: new Date(),
-        employeeAdweNtePct: 0,
-        employeeCsoMaxPremium: 0,
-        insuranceStatusCd: 'ACTIVE',
-        planStatusCd: 'ACTIVE',
-        eligibilityDt: new Date(),
-        nonCustodialName: 'Knope, Leslie',
-        nmsnReferralReportTypeCd: 'MN',
-        nmsnReferralStatusCd: 'ACCEPTED',
-        nmsnReferralNmsnResponseList: [],
-        nmsnReferralNmsnreferCoverageList: [{
-            itemValue: "blueCrossBlueShieldMedical",
-            itemLabel: "Blue Cross Blue Shield - Dental"
-        },
-        {
-            itemValue: "blueCrossBlueShieldMedical",
-            itemLabel: "Blue Cross Blue Shield - Medical"
-        }],
-        nmsnReferralNmsnreferDependentList: [{
-            childName: 'Wyatt, Ron',
-            childSsn: '***-**-1223',
-            childDOB: new Date("May 25, 1977 01:15:00"),
-            childEnrolledFlag: true,
-            childIneligibleFlag: false
-        },
-        {
-            childName: 'Wyatt, Anne',
-            childSsn: '***-**-1234',
-            childDOB: new Date("May 25, 1977 01:15:00"),
-            childEnrolledFlag: true,
-            childIneligibleFlag: false
-        }],
-        nmsnReferralNmsnreferPersorgList: [],
-    }
-];
-const nmsnResponsePendingList = [];
 
 const nmsnResponseHistoricalList = [
     {
@@ -505,7 +413,7 @@ const nmsnResponseHistoricalList = [
         insuranceStatusCd: "ACTIVE",
         nmsnBatchId: null,
         nmsnCountryCd: "US",
-        nmsnReferralId: "01",
+        nmsnReferralId: "03",
         nmsnRespEmployeeAddr: {
             addr1: "123 Main",
             addr2: "Apt 201",
@@ -585,7 +493,7 @@ const nmsnResponseHistoricalList = [
             insuranceStatusCd: "ACTIVE",
             nmsnBatchId: null,
             nmsnCountryCd: "US",
-            nmsnReferralId: "01",
+            nmsnReferralId: "04",
 
             nmsnRespEmployeeAddr: {
                 addr1: "551 Yeet",
@@ -669,7 +577,7 @@ const nmsnResponseRejectedList = [
         insuranceStatusCd: "ACTIVE",
         nmsnBatchId: null,
         nmsnCountryCd: "US",
-        nmsnReferralId: "01",
+        nmsnReferralId: "10",
         nmsnRespEmployeeAddr: {
             addr1: "123 Fake",
             addr2: "Apt 2346",
@@ -710,7 +618,7 @@ const nmsnResponseRejectedList = [
             stateCd: "TX",
             stateOther: ""
         },
-        nmsnResponseId: null,
+        nmsnResponseId: "108",
         nmsnResponseReportTypeCd: undefined,
         nmsnResponseStatusCd: null,
         nmsnStateCd: "GA",
@@ -767,21 +675,34 @@ app.get('/NmsnrespRetrievalService', function (req, res) {
 });
 
 app.get('/NmsnreferRetrievalService', function (req, res) {
-    res.status('200').json(startingNmsnReferralList);
+    const sendThisArray = [];
+    for (let i = 0; i < startingNmsnReferralList.length; i++) {
+        if (startingNmsnReferralList[i].nmsnReferralNmsnResponseList.length === 0) {
+            sendThisArray.push(startingNmsnReferralList[i])
+        }
+    }
+    res.status('200').json(sendThisArray);
     res.end();
 });
 
 app.get('/NmsnReferWithResponses', function (req, res) {
-    res.status('200').json(referralsWithResponses).end();
+    const sendThisArray = [];
+    for (let i = 0; i < startingNmsnReferralList.length; i++) {
+        if (startingNmsnReferralList[i].nmsnReferralNmsnResponseList.length > 0) {
+            sendThisArray.push(startingNmsnReferralList[i])
+        }
+    }
+    res.status('200').json(sendThisArray);
+    res.end();
 })
 
 app.post('/NmsnrespUpdateService', function (req, res) {
     if (startingNmsnReferralList.length) {
         for (let i = 0; i < startingNmsnReferralList.length; i++) {
             if (startingNmsnReferralList[i].nmsnReferralId === req.body.nmsnReferralId) {
-                nmsnResponsePendingList.push(req.body);
-                referralsWithResponses.push(startingNmsnReferralList[i]);
-                startingNmsnReferralList.splice(i, 1);
+                req.body.nmsnResponseId = responseId.toString();
+                responseId++;
+                startingNmsnReferralList[i].nmsnReferralNmsnResponseList.push(req.body);
                 res.json(req.body).end();
             }
         }
